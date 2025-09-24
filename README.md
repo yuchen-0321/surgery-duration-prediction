@@ -178,57 +178,6 @@ class SurgeryDurationPredictor:
     def explain_prediction(self) -> Dict[str, float]
 ```
 
-## 快速開始
-
-### 環境需求
-
-```bash
-# 核心依賴
-pandas>=1.5.0
-numpy>=1.21.0
-scikit-learn>=1.2.0
-matplotlib>=3.6.0
-seaborn>=0.12.0
-joblib>=1.2.0
-```
-
-### 安裝與使用
-
-```bash
-# 克隆專案
-git clone https://github.com/yourusername/surgery-duration-prediction
-cd surgery-duration-prediction
-
-# 安裝依賴
-pip install -r requirements.txt
-
-# 訓練所有科別模型
-python scripts/train_all_departments.py
-
-# 評估模型效能
-python scripts/evaluate_models.py
-```
-
-### 使用範例
-
-```python
-from src.models.predictor import SurgeryPredictor
-
-# 載入預測器
-predictor = SurgeryPredictor.from_department('ENT', 'models')
-
-# 單筆預測
-patient_data = {
-    '年齡(G)': 45,
-    '性別(H)': 'M',
-    '身份(I)': 'A',
-    '麻醉(K)': 'General',
-    '手術名稱(L)': 'Tonsillectomy'
-}
-result = predictor.predict_single(patient_data)
-print(f"預測手術時間: {result['predicted_duration_minutes']} 分鐘")
-```
-
 ## 專案結構
 
 ```
