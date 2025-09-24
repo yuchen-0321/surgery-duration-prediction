@@ -5,11 +5,12 @@ data/processed/
 *.xlsx
 *.xls
 
-# 訓練完成的模型
+# 訓練完成的模型 - 包含敏感訓練資料參數
 models/*/
 !models/README.md
 *.pkl
 *.joblib
+*.model
 
 # Python
 __pycache__/
