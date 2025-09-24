@@ -243,9 +243,6 @@ surgery-duration-prediction/
 │   └── utils/                  # 輔助工具
 ├── scripts/                    # 執行腳本
 ├── models/                     # 訓練完成模型
-├── notebooks/                  # Jupyter 分析
-├── tests/                      # 單元測試
-└── docs/                       # 技術文件
 ```
 
 ## 資料隱私與合規聲明
